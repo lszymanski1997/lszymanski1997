@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <title>Moja strona</title>
+	
+
+
+    
+  </head>
+  <body>
+    
+	<p id="alert">Alert</p>
+	<br>
+	<p id="prompt">Okno dialogowe</p>
+	<br>
+	<p id="promptalert">Okno dialogowe i zwracanie zmiennej</p>
+	<br>
+
+	
+
+
+
+<script>
+document.getElementById("alert").onclick = function ostrzezenie() {
+  alert('To jest Alert');
+};
+</script>
+
+<script>
+document.getElementById("prompt").onclick = function oknodialog() {
+  prompt('podaj swoje imie','tutaj wpisz imie');
+};
+</script>
+
+<script>
+document.getElementById("promptalert").onclick = function dialogiostrzezenie() {
+  const intro="Podaj swoje imie";
+  var imie;
+  imie=prompt(intro);
+  alert('twoje imie to ' +imie);
+};
+</script>
+
+
+
+
+
+  </body>
+</html>
